@@ -1,16 +1,18 @@
 import React from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
+import Services from './Services';
 import ServiceDetail from './ServiceDetail';
 
 const App = () => {
   return (
-   <BrowserRouter>
-   <Routes>
-    <Route path ="/" element={<HomePage />} />
-    <Route path ="/service/:id" element={<ServiceDetail />} />
-   </Routes>
-   </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Services />} />
+        <Route path="/service/:name" element={<ServiceDetail />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
