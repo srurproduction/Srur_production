@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
 import ServiceDetail from './ServiceDetail';
+import { Analytics } from "@vercel/analytics/react";
+
 
 const App = () => {
   const [dark, setDark] = useState(true);
