@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-tangerine {
+  font-family: 'Tangerine', cursive;
+}
+
+.profile-gradient-ring {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #405de6);
+}
+
+.section-dark {
+  background-color:#0f0f0f;
+  color: #ffffff;
+  padding: 60px 0;
+}
+.gradient-text {
+  background: linear-gradient(to right, #f06292, #a445ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.gradient-ring {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #405de6);
+  padding: 6px;
+
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  z-index: 99;
+  border: 5px solid white;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.header {
+  background: linear-gradient(180deg, #d4a3a369, #02273557);
+  z-index: 99;
+  
+}
+.btn-hover-grow{
+  transition: transform 0.3s ease-in-out;
+}
+.btn-hover-grow:hover{
+  transform: scale(1.03);
+}
+.circle-blur{
+  height: 800px;
+  width: 350px;
+  rotate: 45deg;
+  background-color: rgba(248, 248, 5, 0.667);
+  position: absolute;
+  filter: blur(100px);
+  z-index: 1;
+  top: 0;
+  right: 20%;
+}
+
+/* testimonials */
+.testimonial-section {
+  background-color: #121212;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffdd57; 
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ffdd57;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-box {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  max-width: 340px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #ffdd57;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.testimonial-stars {
+  color: #ffdd57;
+  font-size: 1.2rem;
+}
+
+#contact{
+   font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.underline-style {
+  position: relative;
+  left: 40%;
+  display: inline-block;
+}
+.underline-style::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 30%;
+  width: 40%;
+  height: 3px;
+  background-color: #ff3366;
+  border-radius: 2px;
+}
+
+.footer {
+  background: linear-gradient(145deg, #323131, #5e2903);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+   font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  /* background-color: #2c2c2c; */
+  padding: 10px ;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition: background cubic-bezier(0.25, 0.46, 0.45, 0.4);
+}
+
+.social-icons a:hover {
+  background-color: #ff3366;
+   transform: translateY(-4px); 
+}
+
+.heart {
+  color: #ff3366;
+}
+ 
+.back-to-top {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #ff3366;
+}
