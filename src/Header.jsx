@@ -49,7 +49,7 @@ export default function Header({ dark }) {
 
             <motion.h1
               variants={itemVariants}
-              className="text-7xl md:text-9xl font-extrabold mb-4 bg-linear-to-r from-[#f06292] to-[#a445ff] bg-clip-text text-transparent italic tracking-tighter"
+              className="text-7xl md:text-9xl font-semibold mb-4 bg-linear-to-r from-[#f06292] to-[#a445ff] bg-clip-text text-transparent italic tracking-tighter"
               style={{ fontFamily: '"poppins"' }}
             >
               Uganvi Raja
